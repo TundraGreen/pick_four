@@ -14,7 +14,7 @@
 # and at least one of the vowels
 
 # Motivation:
-# Usefol for SpellingBee game.
+# Usefol for the SpellingBee game.
 
 
 # ***********************************************

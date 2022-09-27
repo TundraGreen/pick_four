@@ -1,15 +1,16 @@
-# pick_four.py
-# @2022 William H. Prescott
+pick_four.py
 
-# Given:
-# a collection of letters
-# a required letter
-# a collection of vowels
+    @2022 William H. Prescott
 
-# Output:
-# a list of all four letter combinations drawn from the letters
-# where each member of the list includes the required letter
-# and at least one of the vowels
+    Given:
+    a collection of letters
+    a required letter
+    a collection of vowels
 
-# Motivation:
-# Useful for the SpellingBee game.
+    Output:
+    a list of all four letter combinations drawn from the letters
+    where each member of the list includes the required letter
+    and at least one of the vowels
+
+    Motivation:
+    Useful for the SpellingBee game.
