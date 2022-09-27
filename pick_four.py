@@ -36,7 +36,6 @@ def generate_word_list(letters, required, vowels):
             for vowel in vowels:
               if vowel in answer:
                 print_flag = True
-              else:
                 break
             if print_flag:
               words.append(answer)
