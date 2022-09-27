@@ -14,3 +14,11 @@ pick_four.py
 
     Motivation:
     Useful for the SpellingBee game.
+
+
+    Usage:
+    From a command line (CLI)
+    python3 pick_four.py
+    or
+    pick_four.py
+    It will prompt for the input.
