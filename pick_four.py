@@ -36,26 +36,25 @@ def generate_word_list(letters, required, vowels):
             for vowel in vowels:
               if vowel in answer:
                 print_flag = True
-              else:
-                break
+              # else:
+              #   break
             if print_flag:
               words.append(answer)
   return words
 
 # ***********************************************
 def print_results(words):
-  out_string = ""
-  series = 0
-  while series < len(words) + 15:
-    for index in range(0, 15):
-      if series + index >= len(words):
-        break
-      out_string += words[series + index] + "\t"
-    out_string = out_string[0:len(out_string) - 1] + "\n"
-    series += 15
-
-  print(out_string)
   print('Count: %d' % len(words))
+  while len(words) % 15 != 0:
+    words.append('')
+  print('Count (padded): %d' % len(words))
+  number_rows = int(len(words)/15)
+  print('Number of rows: %d' % number_rows)
+  for r in range(0,number_rows):
+    print('%d:\t' % r, end='')
+    for c in range(0,len(words), number_rows):
+      print('%s\t' % words[r + c], end='')
+    print()
 
 # ***********************************************
 def read_letters():
